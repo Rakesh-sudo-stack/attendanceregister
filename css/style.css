@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media(max-width:292px){
+    html{
+        font-size: 69%;
+    }
+}
+
+header{
+    width: 100vw;
+    height: 4rem;
+    color:white;
+    font-size: 2rem;
+    font-weight: 900;
+    background: linear-gradient(to right,rgb(56, 56, 180),rgb(153, 153, 245));
+    display: grid;
+    place-items: center;
+}
+
+.center_div{
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(7, 9, 10, 0.63), rgba(6, 9, 10, 0.562)), url('../img/school.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.main_div{
+    height: 73%;
+    width: 32%;
+    background: rgba(10, 7, 7, 0.849);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_div .details{
+    height: 3rem;
+    width: 100%;
+    border-bottom: 1px solid white;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.main_div form{
+    height: calc(100% - 3rem);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_div form input{
+    height: 2.2rem;
+    width: 65%;
+    background: transparent;
+    outline: none;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.main_div form input:first-child{
+    margin-bottom: 1.5rem;
+}
+
+.main_div form button{
+    margin-top: 1.5rem;
+    height: 2rem;
+    width: 5rem;
+    border-radius: 1rem;
+    background: linear-gradient(rgb(83, 83, 185),rgb(49, 49, 190),rgb(25, 25, 231));
+}
+
+.studentslist{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+table{
+    width: 100%;
+}
+
+table thead, table tbody{
+    width:100%;
+    background: rgba(26, 25, 25, 0.753);
+    outline: none;
+}
+
+table tbody{
+    background:grey;
+}
+
+table tr td{
+    font-size: 1.4rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main_div form a{
+    text-decoration: none;
+    color: rgb(63, 63, 218);
+}
